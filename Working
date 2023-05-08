@@ -1,0 +1,44 @@
+const debtItems = document.getElementById('debt-items');
+-This line gets the HTML element with the ID debt-items and assigns it to the debtItems constant. This element represents the table where the debt items will be displayed.
+
+const addBtn = document.getElementById('add-btn');
+-This line gets the HTML element with the ID add-btn and assigns it to the addBtn constant. This element represents the button that will be used to add new debt items to the table.
+
+addBtn.addEventListener('click', () => { ... }
+-This code adds a click event listener to the addBtn button. When the button is clicked, the code inside the callback function will be executed.
+
+const name = document.getElementById('name').value;
+-This line gets the value entered in the input field with the ID name and assigns it to the name constant.
+
+const amount = document.getElementById('amount').value;
+-This line gets the value entered in the input field with the ID amount and assigns it to the amount constant.
+
+if (!name || !amount) { ... }
+-This code checks if either name or amount is empty. If either of them is empty, an alert message will be displayed, and the function will return, preventing the new debt item from being added to the table.
+
+const row = ...;
+-This code creates a new row of HTML code to be added to the debt items table. The row consists of four columns - the name of the debt, the amount owed, a "Mark as Paid" button, and a "Delete" button.
+
+debtItems.insertAdjacentHTML('beforeend', row);
+-This code adds the newly created row to the end of the debt items table.
+
+document.getElementById('name').value = '';
+-This line clears the input field with the ID name after a debt item has been added.
+
+document.getElementById('amount').value = '';
+-This line clears the input field with the ID amount after a debt item has been added.
+
+debtItems.addEventListener('click', (event) => { ... }
+-This code adds a click event listener to the debtItems table. When a "Mark as Paid" or "Delete" button is clicked within the table, the code inside the callback function will be executed.
+
+const element = event.target;
+-This line gets the HTML element that triggered the click event and assigns it to the element constant.
+
+const parent = element.parentNode.parentNode;
+-This line gets the parent of the element's parent node, which is the row in which the button was clicked, and assigns it to the parent constant.
+
+if (element.classList.contains('status-btn')) { ... }
+-This code checks if the clicked button has the class status-btn, which indicates that the button is the "Mark as Paid" button. If it is, the debt item is marked as paid by adding the paid class to the row, disabling the "Mark as Paid" button, and changing its text to "Paid".
+
+} else if (element.classList.contains('delete-btn')) { ... }
+-This code checks if the clicked button has the class delete-btn, which indicates that the button is the "Delete" button. If it is, the entire row containing the debt item is removed from the table.
