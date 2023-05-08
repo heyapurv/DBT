@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="debt-tracker">
+        <h2>Debt Tracker</h2>
+        <div class="debt-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" placeholder="Enter amount">
+          <button id="add-btn">Add</button>
+        </div>
+        <div class="debt-list">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="debt-items"></tbody>
+          </table>
+        </div>
+      </div>
+      <script src="logic.js"></script>
+</body>
+</html>

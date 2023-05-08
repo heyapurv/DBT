@@ -1,0 +1,103 @@
+.debt-tracker {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  .debt-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .debt-form label {
+    margin-right: 10px;
+  }
+  
+  .debt-form input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  .debt-form button {
+    border-radius: 5px;
+    border: none;
+    background-color: #1d93c2;
+    color: #fff;
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  .debt-form button:hover {
+    background-color: #454ad2;
+  }
+  
+  .debt-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .debt-list th,
+  .debt-list td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .debt-list th {
+    background-color: #656572;
+    color: #fff;
+  }
+  
+  .debt-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .debt-list tr:hover {
+    background-color: #ddd;
+  }
+  
+  .debt-list .paid {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .debt-list .paid:hover {
+    background-color: #3e8e41;
+  }
+  
+  .debt-list .delete {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .debt-list .delete:hover {
+    background-color: #c62828;
+  }
+  @media (max-width: 600px) {
+    .debt-form {
+      flex-direction: column;
+    }
+    
+    .debt-form label,
+    .debt-form input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .debt-form button {
+      width: auto;
+      margin-top: 10px;
+    }
+    
+    .debt-list th,
+    .debt-list td {
+      font-size: 14px;
+    }
+  }
+  
