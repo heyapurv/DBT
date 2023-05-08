@@ -50,7 +50,7 @@
   }
   
   .debt-list th {
-    background-color: #656572;
+    background-color: #669BBC;
     color: #fff;
   }
   
@@ -63,22 +63,15 @@
   }
   
   .debt-list .paid {
-    background-color: #4CAF50;
+    background-color: #59cd90;
     color: #fff;
   }
   
   .debt-list .paid:hover {
-    background-color: #3e8e41;
+    background-color: #82e085;
   }
   
-  .debt-list .delete {
-    background-color: #f44336;
-    color: #fff;
-  }
   
-  .debt-list .delete:hover {
-    background-color: #c62828;
-  }
   @media (max-width: 600px) {
     .debt-form {
       flex-direction: column;
