@@ -55,11 +55,11 @@
   }
   
   .debt-list tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #59cd90;
   }
   
   .debt-list tr:hover {
-    background-color: #ddd;
+    background-color: #82e085;
   }
   
   .debt-list .paid {
